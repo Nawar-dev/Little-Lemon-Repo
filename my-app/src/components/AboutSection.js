@@ -13,14 +13,14 @@ export default function Chicago() {
           </p>
         </div>
         <div className="chicago-images">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=400" 
-            alt="Mario and Adrian" 
+            alt="Mario and Adrian"
             className="img-stacked top-img"
           />
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400" 
-            alt="Kitchen cooking" 
+            alt="Kitchen cooking"
             className="img-stacked bottom-img"
           />
         </div>

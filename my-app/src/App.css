@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Markazi+Text:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Markazi+Text:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-green: #495E57;
-  --primary-yellow: #F4CE14;
-  --secondary-orange: #EE9972;
-  --secondary-beige: #FBDABB;
-  --light-gray: #EDEFEE;
+  --primary-green: #495e57;
+  --primary-yellow: #f4ce14;
+  --secondary-orange: #ee9972;
+  --secondary-beige: #fbdabb;
+  --light-gray: #edefee;
   --dark-gray: #333333;
 }
 
@@ -16,46 +16,48 @@
 }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   color: var(--dark-gray);
 }
 
-/* General Setting For Typography and Buttons and Imges */
+/* General Setting For Typography and Buttons and Images */
 
 h1 {
-  font-family: 'Markazi Text', serif;
+  font-family: "Markazi Text", serif;
   font-size: 64px;
   font-weight: 500;
   line-height: 1;
 }
 
 h2 {
-  font-family: 'Markazi Text', serif;
+  font-family: "Markazi Text", serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 1.1;
 }
 
 h3 {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 20px;
   font-weight: 800;
   text-transform: uppercase;
 }
 
-h4, h5, h6 {
-  font-family: 'Karla', sans-serif;
+h4,
+h5,
+h6 {
+  font-family: "Karla", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
 
-p, span {
-  font-family: 'Karla', sans-serif;
+p,
+span {
+  font-family: "Karla", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--dark-gray);
 }
-
 
 img {
   max-width: 100%;
@@ -64,9 +66,9 @@ img {
   border-radius: 16px;
 }
 
-
-button, .btn {
-  font-family: 'Karla', sans-serif;
+button,
+.btn {
+  font-family: "Karla", sans-serif;
   font-weight: 700;
   font-size: 16px;
   padding: 12px 24px;
@@ -75,10 +77,17 @@ button, .btn {
   background-color: var(--primary-yellow);
   color: var(--dark-gray);
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
 
-button:hover, .btn:hover {
+button:hover,
+.btn:hover {
   background-color: #e0bd10;
   transform: translateY(-2px);
 }
@@ -92,7 +101,7 @@ button:hover, .btn:hover {
   align-items: center;
   padding: 20px 10%;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -121,7 +130,6 @@ button:hover, .btn:hover {
 /* === Nav Style === */
 
 /* === Header Style === */
-
 
 /* Footer Style */
 
@@ -171,12 +179,10 @@ button:hover, .btn:hover {
   color: var(--primary-yellow);
 }
 
-
 /* === Footer Style === */
 
- /* Responsive */
+/* Responsive */
 @media (max-width: 768px) {
-
   .header-container {
     flex-direction: column;
     gap: 15px;
@@ -196,7 +202,6 @@ button:hover, .btn:hover {
   .nav-links a {
     font-size: 14px;
   }
-
 
   .footer-columns {
     grid-template-columns: 1fr;
@@ -261,13 +266,13 @@ button:hover, .btn:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* تعديل تجاوب الـ Hero للجوال داخل media query الشاشات الصغيرة */
+/* Responsive */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .hero-text p {
     margin: 0 auto 20px auto;
   }
@@ -282,10 +287,12 @@ button:hover, .btn:hover {
     height: 250px;
   }
 }
+
+/* === Responsive === */
+
 /* === Hero Section === */
 
-
-/* --- Specials Section Style --- */
+/*  Specials Section  */
 .specials-section {
   padding: 60px 10%;
   max-width: 1200px;
@@ -317,6 +324,10 @@ button:hover, .btn:hover {
   flex-direction: column;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
 }
 
 .special-card:hover {
@@ -369,7 +380,12 @@ button:hover, .btn:hover {
   font-size: 14px;
 }
 
-/* تجاوب البطاقات مع الجوال */
+.order-btn:hover {
+  color: var(--primary-green);
+  text-decoration: underline;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .specials-grid {
     grid-template-columns: 1fr;
@@ -381,6 +397,7 @@ button:hover, .btn:hover {
     text-align: center;
   }
 }
+/* === Responsive === */
 
 /* === Specials Secion === */
 
